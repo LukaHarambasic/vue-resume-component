@@ -1,0 +1,56 @@
+{
+  "generic": {
+    "name": "Peter Pan",
+    "defaultStyling": true,
+    "colors": {
+      "primary": "#ff0000",
+      "accent": "#00ff00",
+      "font": "#000000",
+      "background": "#ffffff"
+    },
+    "fonts": {
+      "headline": "Comic Sans",
+      "body": "Comic Sans"
+    }
+  },
+  "header": {
+    "image": "/img/picture.jpg"
+  },
+  "footer": {
+    "logo": "/img/picture.jpg",
+    "content": [
+      {
+        "title": "LinkedIn",
+        "url": "http://linkedin.com"
+      },
+      {
+        "title": "GitHub",
+        "url": "Website"
+      },
+      {
+        "title": "+49 18404 4849 393",
+        "url": "tel:+49184044849393"
+      },
+      {
+        "title": "max@mustermann.de",
+        "url": "mailto:max@mustermann.de"
+      }
+    ]
+  },
+  "segments": {
+    "title": "Ecperience",
+    "order": "custom",
+    "entries": {
+      "order": "custom"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "order": "custom",
+    "entries": {
+      "order": "custom",
+      "display": "list",
+      "levelType": "number"
+    }
+  }
+}
