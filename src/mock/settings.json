@@ -1,39 +1,47 @@
 {
-  "generic": {
-    "name": "Peter Pan",
+  "style": {
     "defaultStyling": true,
     "colors": {
-      "primary": "#ff0000",
-      "accent": "#00ff00",
-      "font": "#000000",
-      "background": "#ffffff"
+      "primary": "#4A5428",
+      "accent": "#ECE0CF",
+      "background": "#FFFFFF",
+      "font": "#0F1108",
+      "fontOnPrimary": "#ECE0CF",
+      "fontOnAccent": "#FFFFFF"
     },
     "fonts": {
-      "headline": "Comic Sans",
-      "body": "Comic Sans"
+      "headline": "Open Sans",
+      "body": "Open Sans"
     }
   },
   "header": {
-    "image": "/img/picture.jpg"
+    "name": "Petra Pan",
+    "image": "/profile.jpeg"
   },
+  "information": [
+    {
+      "title": "+49 18404 4849 393",
+      "url": "tel:+49184044849393"
+    },
+    {
+      "title": "petra@pan.neverland",
+      "url": "mailto:petra@pan.neverland"
+    },
+    {
+      "title": "linkedin.com/in/petrapan",
+      "url": "http://linkedin.com/in/petrapan2123412341234"
+    },
+    {
+      "title": "github.com/PetraPan",
+      "url": "https://github.com/PetraPan341234123123512352341234124"
+    }
+  ],
   "footer": {
-    "logo": "/img/picture.jpg",
-    "content": [
+    "logo": "/logo.svg",
+    "links": [
       {
-        "title": "LinkedIn",
-        "url": "http://linkedin.com"
-      },
-      {
-        "title": "GitHub",
-        "url": "Website"
-      },
-      {
-        "title": "+49 18404 4849 393",
-        "url": "tel:+49184044849393"
-      },
-      {
-        "title": "max@mustermann.de",
-        "url": "mailto:max@mustermann.de"
+        "title": "pan.neverland",
+        "url": "https://pan.neverland"
       }
     ]
   },
@@ -54,3 +62,4 @@
     }
   }
 }
+
