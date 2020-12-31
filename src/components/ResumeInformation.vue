@@ -35,18 +35,17 @@ export default {
 
 <style lang="sass" scoped>
 .resume-information
+  margin: 0 0 2rem 0
   background: var(--color-accent)
   border-radius: $border-radius
   padding: 1rem
 .resume-information-entry
-  line-height: 1.5
-  list-style: decimal-leading-zero
-  margin: 0 0 0 1.5rem
+  margin: 0 0 .5rem 0
   overflow-wrap: break-word
   word-wrap: break-word
   font-size: .9rem
-  &::marker
-    font-weight: bold
+  &:last-of-type
+    margin: 0
   a
     color: var(--color-font)
     transition: $transition

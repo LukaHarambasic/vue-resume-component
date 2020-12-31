@@ -38,7 +38,6 @@ export default {
 <style lang="sass" scoped>
 .resume-footer
   position: relative
-  width: 100%
   color: var(--color-font-on-primary)
   background: var(--color-primary)
   border-radius: 0 0 $border-radius $border-radius

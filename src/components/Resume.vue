@@ -9,15 +9,29 @@
       :segments="resume.segments"
       :settings="settings.segments"
     />
-    <resume-information
-      :information="settings.information"
-      class="information"
-    />
-    <resume-skills
-      class="skills"
-      :skills="resume.skills"
-      :settings="settings.skills"
-    />
+    <aside class="sidebar">
+      <resume-image
+        class="image"
+        :image="settings.image"
+        v-if="settings.image"
+      />
+      <resume-slogan
+        class="slogan"
+        :slogan="settings.slogan"
+        v-if="settings.slogan"
+      />
+      <resume-information
+        :information="settings.information"
+        class="information"
+        v-if="settings.information"
+      />
+      <resume-skills
+        class="skills"
+        :skills="resume.skills"
+        :settings="settings.skills"
+        v-if="resume.skills"
+      />
+    </aside>
     <resume-footer
       class="footer"
       :settings="settings.footer"
@@ -31,9 +45,13 @@ import ResumeFooter from '@/components/ResumeFooter'
 import ResumeSegments from '@/components/ResumeSegments'
 import ResumeSkills from '@/components/ResumeSkills'
 import ResumeInformation from '@/components/ResumeInformation'
+import ResumeImage from '@/components/ResumeImage'
+import ResumeSlogan from '@/components/ResumeSlogan'
 export default {
   name: 'Resume',
   components: {
+    ResumeSlogan,
+    ResumeImage,
     ResumeInformation,
     ResumeHeader,
     ResumeFooter,
@@ -79,25 +97,23 @@ export default {
 <style lang="sass" scoped>
 .resume
   display: grid
-  grid-template-areas: "header header header header" ". segments information ."  ". segments skills ." "footer footer footer footer"
-  grid-template-columns: 2rem 1fr 33% 2rem
-  grid-template-rows: auto auto 1fr auto
+  grid-template-areas: "sidebar header" "sidebar segments" "footer footer"
+  grid-template-columns: 30% 1fr
+  grid-template-rows: auto 1fr auto
+  grid-gap: 2rem
   width: $paper-width
   min-height: $paper-height
   background: var(--color-background)
   border-radius: $border-radius
 .header
   grid-area: header
-  margin: 0 0 2rem 0
+  margin: 2rem 2rem 0 0
 .segments
   grid-area: segments
-  margin: 3rem 2rem 0 0
-.information
-  grid-area: information
-  margin: 0 0 2rem 0
-.skills
-  grid-area: skills
+  margin: 0 2rem 0 0
+.sidebar
+  grid-area: sidebar
+  margin: 2rem 0 0 2rem
 .footer
-  margin: 2rem 0 0 0
   grid-area: footer
 </style>

@@ -2,6 +2,7 @@
   <div class="resume-header">
     <img
       class="resume-header-image"
+      v-if="settings.image"
       :src="settings.image"
       :alt="alt"
     >
@@ -32,23 +33,11 @@ export default {
 
 <style lang="sass" scoped>
 .resume-header
-  display: flex
-  flex-direction: row
-  flex-wrap: nowrap
-  justify-content: flex-start
-  align-content: flex-start
-  align-items: flex-start
   background: var(--color-primary)
-  border-radius: $border-radius $border-radius 0 0
-  padding: 1rem 2rem
-  height: 6rem
-.resume-header-image
-  width: 8rem
   border-radius: $border-radius
-  box-shadow: $box-shadow
+  padding: 1rem
 .resume-header-name
   color: var(--color-font-on-primary)
   font-size: 2rem
   font-weight: bold
-  margin: 1rem 0 0 1rem
 </style>

@@ -27,6 +27,8 @@ export default {
 .resume-skill-entry
   margin: 0
   display: inline
+  font-size: .9rem
+  line-height: 1.4
   &:after
     content: ','
     margin: 0 .3rem 0 0

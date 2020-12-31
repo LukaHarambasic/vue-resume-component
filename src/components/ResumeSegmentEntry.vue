@@ -100,8 +100,8 @@ export default {
   &:after
     content: ''
     position: absolute
-    left: -17.1px
-    top: 1rem
+    left: -17px
+    top: 18px
     width: .75rem
     height: .75rem
     background: var(--color-accent)
@@ -117,7 +117,8 @@ export default {
 .resume-segment-entry-information
   display: flex
   flex-flow: row nowrap
-  font-size: .9rem
+  font-size: .8rem
+  font-style: italic
   margin: 0 0 .2rem 0
   .resume-segment-entry-information-date
     display: flex
@@ -136,4 +137,5 @@ export default {
   margin: 0 0 .2rem 0
 .resume-segment-entry-description
   width: 100%
+  font-size: .9rem
 </style>
