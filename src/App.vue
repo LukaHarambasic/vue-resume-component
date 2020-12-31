@@ -9,8 +9,8 @@
 import Resume from '@/components/Resume'
 
 // Mock Data - this has to be provided by the user
-import MOCK_SETTINGS from '@/mock/settings.private.json'
-import MOCK_RESUME from '@/mock/resume.private.json'
+import MOCK_SETTINGS from '@/mock/settings.json'
+import MOCK_RESUME from '@/mock/resume.json'
 
 export default {
   name: 'App',
