@@ -25,5 +25,5 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-# My private settings
-*_lh.json
+# Keep private stuff local
+**/*.private.*
