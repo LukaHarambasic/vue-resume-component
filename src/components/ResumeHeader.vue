@@ -1,11 +1,5 @@
 <template>
   <div class="resume-header">
-    <img
-      class="resume-header-image"
-      v-if="settings.image"
-      :src="settings.image"
-      :alt="alt"
-    >
     <h1
       v-text="settings.name"
       class="resume-header-name"

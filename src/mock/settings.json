@@ -15,9 +15,9 @@
     }
   },
   "header": {
-    "name": "Petra Pan",
-    "image": "/profile.jpeg"
+    "name": "Petra Pan"
   },
+  "image": "/profile.jpeg",
   "information": [
     {
       "title": "+49 18404 4849 393",
