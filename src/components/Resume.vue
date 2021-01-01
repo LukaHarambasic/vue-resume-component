@@ -105,15 +105,27 @@ export default {
   min-height: $paper-height
   background: var(--color-background)
   border-radius: $border-radius
+  @media screen and (max-width: $breakpoint)
+    grid-template-areas: "header" "sidebar" "segments" "footer"
+    grid-template-columns: 1fr
+    grid-template-rows: auto auto auto auto
+    width: 100%
+    min-height: auto
 .header
   grid-area: header
   margin: 2rem 2rem 0 0
+  @media screen and (max-width: $breakpoint)
+    margin: 2rem 2rem 0 2rem
 .segments
   grid-area: segments
   margin: 0 2rem 0 0
+  @media screen and (max-width: $breakpoint)
+    margin: 0 2rem 0 2rem
 .sidebar
   grid-area: sidebar
   margin: 2rem 0 0 2rem
+  @media screen and (max-width: $breakpoint)
+    margin: 0 2rem 0 2rem
 .footer
   grid-area: footer
 </style>
