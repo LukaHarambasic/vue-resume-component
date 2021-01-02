@@ -40,6 +40,8 @@
 </template>
 
 <script>
+import MOCK_RESUME from '../mock/resume.private.json'
+import MOCK_SETTINGS from '../mock/settings.private.json'
 import ResumeHeader from './ResumeHeader'
 import ResumeFooter from './ResumeFooter'
 import ResumeSegments from './ResumeSegments'
@@ -64,12 +66,14 @@ export default {
   props: {
     settings: {
       type: Object,
-      required: true
+      required: true,
+      default: MOCK_SETTINGS
       // TODO add validator for mandatory fields
     },
     resume: {
       type: Object,
-      required: true
+      required: true,
+      default: MOCK_RESUME
       // TODO add validator for mandatory fields
     }
   },
@@ -94,38 +98,45 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
+*:root
+  --paper-width: 210mm
+  --paper-height: 297mm
+  --breakpoint: var(--paper-width) + 30mm
+  --border-radius: 2px
+  --transition: all 150ms ease-in-out
+  --box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.1), 0 0 3px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1)
 .resume
   display: grid
   grid-template-areas: "sidebar header" "sidebar segments" "footer footer"
   grid-template-columns: 30% 1fr
   grid-template-rows: auto 1fr auto
   grid-gap: 2rem
-  width: $paper-width
-  min-height: $paper-height
+  width: var(--paper-width)
+  min-height: var(--paper-height)
   background: var(--color-background)
-  border-radius: $border-radius
-  @media screen and (max-width: $breakpoint)
+  border-radius: var(--border-radius)
+  @media screen and (max-width: var(--breakpoint))
     grid-template-areas: "header" "sidebar" "segments" "footer"
     grid-template-columns: 1fr
     grid-template-rows: auto auto auto auto
     width: 100%
     min-height: auto
-.header
-  grid-area: header
-  margin: 2rem 2rem 0 0
-  @media screen and (max-width: $breakpoint)
-    margin: 2rem 2rem 0 2rem
-.segments
-  grid-area: segments
-  margin: 0 2rem 0 0
-  @media screen and (max-width: $breakpoint)
-    margin: 0 2rem 0 2rem
-.sidebar
-  grid-area: sidebar
-  margin: 2rem 0 0 2rem
-  @media screen and (max-width: $breakpoint)
-    margin: 0 2rem 0 2rem
-.footer
-  grid-area: footer
+  >.header
+    grid-area: header
+    margin: 2rem 2rem 0 0
+    @media screen and (max-width: var(--breakpoint))
+      margin: 2rem 2rem 0 2rem
+  >.segments
+    grid-area: segments
+    margin: 0 2rem 0 0
+    @media screen and (max-width: var(--breakpoint))
+      margin: 0 2rem 0 2rem
+  >.sidebar
+    grid-area: sidebar
+    margin: 2rem 0 0 2rem
+    @media screen and (max-width: var(--breakpoint))
+      margin: 0 2rem 0 2rem
+  >.footer
+    grid-area: footer
 </style>

@@ -28,10 +28,10 @@ export default {
 <style lang="sass" scoped>
 .resume-header
   background: var(--color-primary)
-  border-radius: $border-radius
+  border-radius: var(--border-radius)
   padding: 1rem
-.resume-header-name
-  color: var(--color-font-on-primary)
-  font-size: 2rem
-  font-weight: bold
+  >.resume-header-name
+    color: var(--color-font-on-primary)
+    font-size: 2rem
+    font-weight: bold
 </style>

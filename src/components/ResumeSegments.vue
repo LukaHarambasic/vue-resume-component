@@ -48,6 +48,6 @@ export default {
 <style lang="sass" scoped>
 .resume-segment
   margin: 0 0 2rem 0
-.resume-segment-list
-  margin: 0 0 0 .2rem
+  >.resume-segment-list
+    margin: 0 0 0 .2rem
 </style>

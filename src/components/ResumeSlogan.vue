@@ -20,7 +20,7 @@ export default {
 .resume-slogan
   margin: 0 0 2rem 0
   background: var(--color-accent)
-  border-radius: $border-radius
+  border-radius: var(--border-radius)
   padding: 1rem
   font-size: 0.9rem
 </style>

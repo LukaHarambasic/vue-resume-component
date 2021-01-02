@@ -48,13 +48,13 @@ export default {
 <style lang="sass" scoped>
 .resume-skills
   background: var(--color-accent)
-  border-radius: $border-radius
+  border-radius: var(--border-radius)
   padding: 1rem
-.resume-skills-category
-  margin: 0 0 1rem 0
-.resume-skills-category-entries
-  list-style: none
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
+  >.resume-skills-category
+    margin: 0 0 1rem 0
+  >.resume-skills-category-entries
+    list-style: none
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
 </style>

@@ -37,20 +37,20 @@ export default {
 .resume-information
   margin: 0 0 2rem 0
   background: var(--color-accent)
-  border-radius: $border-radius
+  border-radius: var(--border-radius)
   padding: 1rem
-.resume-information-entry
-  margin: 0 0 .5rem 0
-  overflow-wrap: break-word
-  word-wrap: break-word
-  font-size: .9rem
-  &:last-of-type
-    margin: 0
-  a
-    color: var(--color-font)
-    transition: $transition
-    text-decoration: none
-    border-bottom: 1px transparent solid
-    &:hover
-      border-bottom-color: var(--color-font)
+  >.resume-information-entry
+    margin: 0 0 .5rem 0
+    overflow-wrap: break-word
+    word-wrap: break-word
+    font-size: .9rem
+    &:last-of-type
+      margin: 0
+    a
+      color: var(--color-font)
+      transition: var(--transition)
+      text-decoration: none
+      border-bottom: 1px transparent solid
+      &:hover
+        border-bottom-color: var(--color-font)
 </style>

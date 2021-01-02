@@ -22,8 +22,8 @@ export default {
 <style lang="sass" scoped>
 .resume-image
   margin: 0 0 2rem 0
-  img
+  >img
     max-width: 100%
-    border-radius: $border-radius
-    box-shadow: $box-shadow
+    border-radius: var(--border-radius)
+    box-shadow: var(--box-shadow)
 </style>
