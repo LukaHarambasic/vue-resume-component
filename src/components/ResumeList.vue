@@ -1,9 +1,9 @@
 <template>
-  <div class="resume-information">
+  <div class="resume-list">
     <ul>
       <li
-        class="resume-information-entry"
-        v-for="(entry, i) in information"
+        class="resume-list-entry"
+        v-for="(entry, i) in list"
         :key="i"
       >
         <a
@@ -22,9 +22,9 @@
 
 <script>
 export default {
-  name: 'ResumeInformation',
+  name: 'ResumeList',
   props: {
-    information: {
+    list: {
       type: Array,
       required: true
       // TODO validator
@@ -34,12 +34,12 @@ export default {
 </script>
 
 <style lang="sass">
-.resume-information
+.resume-list
   margin: 0 0 2rem 0
   background: var(--color-accent)
   border-radius: var(--border-radius)
   padding: 1rem
-  .resume-information-entry
+  .resume-list-entry
     margin: 0 0 .5rem 0
     overflow-wrap: break-word
     word-wrap: break-word

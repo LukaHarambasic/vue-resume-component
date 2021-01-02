@@ -1,6 +1,6 @@
 {
   "name": "vue-resume-component",
-  "version": "0.0.2",
+  "version": "0.0.2+ec436de7",
   "description": "A resume / cv component for Vue.js and Nuxt.js.",
   "main": "dist/resume.umd.js",
   "module": "dist/resume.esm.js",
@@ -34,15 +34,6 @@
     "url": "https://github.com/LukaHarambasic/vue-resume-component/issues"
   },
   "homepage": "https://github.com/LukaHarambasic/vue-resume-component#readme",
-  "dependencies": {
-  },
-  "devDependencies": {
-    "rollup": "^1.17.0",
-    "@rollup/plugin-buble": "^0.21.3",
-    "@rollup/plugin-commonjs": "^11.1.0",
-    "rollup-plugin-vue": "^5.0.1",
-    "vue": "^2.6.10",
-    "vue-template-compiler": "^2.6.10",
-    "sass-loader": "^10.1.0"
-  }
+  "dependencies": {},
+  "yalcSig": "ec436de7551b3bd4f9ce92f1d3a1d7f5"
 }
