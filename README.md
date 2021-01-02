@@ -4,7 +4,7 @@
 
 [![demo](https://img.shields.io/badge/demo-live-informational)](https://vue-resume-component.vercel.app/) [![npm](https://img.shields.io/npm/v/vue-resume-component)](https://www.npmjs.com/package/vue-resume-component) [![npm bundle size](https://img.shields.io/bundlephobia/min/vue-resume-component)](https://www.npmjs.com/package/vue-resume-component) [![GitHub](https://img.shields.io/github/license/LukaHarambasic/vue-resume-component)](https://github.com/LukaHarambasic/vue-resume-component/blob/main/LICENSE)
 
-A resume / cv component for Vue.js and Nuxt.js.
+A resume / CV component for Vue.js and Nuxt.js.
 
 > I wouldn't recommend to use this package if you want a bullet proof CV as it uses some new [technologies](#technologies).
 
@@ -34,12 +34,12 @@ JSONs are just working out of the box, you could also include them in `data` in 
 
 ```vue
 <template>
-    <resume
-      :segments="segments"
-      :skills="skills"
-      :information="information"
-      :settings="settings"
-    />
+    <resume
+      :segments="segments"
+      :skills="skills"
+      :information="information"
+      :settings="settings"
+    />
 </template>
 
 <script>
@@ -50,17 +50,17 @@ import skills from '@/content/cv/skills.json'
 import information from '@/content/cv/information.json'
 import settings from '@/content/cv/settings.json'
 export default {
-  components: {
-    resume,
-  },
-  data() {
-    return {
-      segments,
-      skills,
-      information,
-      settings,
-    }
-  },
+  components: {
+    resume,
+  },
+  data() {
+    return {
+      segments,
+      skills,
+      information,
+      settings,
+    }
+  },
 }
 </script>
 ```
@@ -71,14 +71,14 @@ The only difference is that the component is wrapped in `<client-only>`.
 
 ```vue
 <template>
-  <client-only>
-    <resume
-      :segments="segments"
-      :skills="skills"
-      :information="information"
-      :settings="settings"
-    />
-  </client-only>
+  <client-only>
+    <resume
+      :segments="segments"
+      :skills="skills"
+      :information="information"
+      :settings="settings"
+    />
+  </client-only>
 </template>
 
 <script>
@@ -89,17 +89,17 @@ import skills from '@/content/cv/skills.json'
 import information from '@/content/cv/information.json'
 import settings from '@/content/cv/settings.json'
 export default {
-  components: {
-    resume,
-  },
-  data() {
-    return {
-      segments,
-      skills,
-      information,
-      settings,
-    }
-  },
+  components: {
+    resume,
+  },
+  data() {
+    return {
+      segments,
+      skills,
+      information,
+      settings,
+    }
+  },
 }
 </script>
 ```
@@ -110,9 +110,9 @@ This is a component which can be implemented in existing websites or as standalo
 
 ### Structure
 
-1. Segments - All the basic stuff for a CV: Education, Work, Voluntary, Side Projects, ...
-2. Skills - Lists of stuff you are capable of: Programming, Language, Soft Skills, ...
-3. Information - Content which isn't part of segments and skills: Name, Image, Logo, Links, ...
+1. Segments - All the basic stuff for a CV: Education, Work, Voluntary, Side Projects, …
+2. Skills - Lists of stuff you are capable of: Programming, Language, Soft Skills, …
+3. Information - Content which isn't part of segments and skills: Name, Image, Logo, Links, …
 4. Settings - You can style, define orders (as it is, alphabetically, per date) or what you want to display.
 
 ### Technologies
@@ -137,7 +137,7 @@ This component is using:
 
 ### Basic setup
 
-1. Install [Vue Cli 3](https://github.com/vuejs/vue-cli/) ([more details](https://vuejs.org/v2/cookbook/packaging-sfc-for-npm.html#Will-this-replace-my-current-development-process)).
+1. Install [Vue CLI 3](https://github.com/vuejs/vue-cli/) ([more details](https://vuejs.org/v2/cookbook/packaging-sfc-for-npm.html#Will-this-replace-my-current-development-process)).
 2. Run `vue serve --open src/components/Resume.vue` - won't work until you provide mock data as defaults for the props.
 
 ### Test environment
@@ -145,5 +145,5 @@ This component is using:
 1. This repo contains a complete Vue setup to test the package locally. This uses [yalc](https://github.com/wclr/yalc) to install the package locally.
 2. Start localhost with `npm run serve` in `dev`.
 3. Execute `npm run publish:local` in the root directory, which will cause a build and `yalc publish`.
-4. After this you can hard reload your localhost to see the changes, hot reload isn't working everytime.
-5. Everytime you want to deploy your changes locally you can start over at `3.`.
+4. After this you can hard reload your localhost to see the changes, hot reload isn't working every time.
+5. If you want to deploy your changes locally, start over at `3.`.
