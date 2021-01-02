@@ -1,41 +1,18 @@
-# Based on https://www.voorhoede.nl/en/blog/turning-vue-components-into-reusable-npm-packages/#publishing-to-npm
 on:
   push:
-    tags: v*.*.*
-
+    branches:
+      - main
 jobs:
-  npm:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-
+      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Install npm dependencies
-        run: npm ci
-
-#      - name: Lint code
-#        run: npm run lint
-#
-#      - name: Test and build package
-#        run: |
-#          npm test
-#          npm run build
-
-      - name: Publish tag to npm
-        if: contains(github.ref, 'tags')
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-
-      - uses: actions/setup-node@v1
+          node-version: 10
+      - run: npm ci
+      # TODO: npm run lint
+      # TODO: npm run test
+      - uses: JS-DevTools/npm-publish@v1
         with:
-          registry-url: 'https://npm.pkg.github.com'
-
-      - name: Publish tag to GPR
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_AUTH_TOKEN }}
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
