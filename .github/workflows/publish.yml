@@ -17,13 +17,14 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
-      - name: Lint code
-        run: npm run lint
+#      - name: Lint code
+#        run: npm run lint
+#
+#      - name: Test and build package
+#        run: |
+#          npm test
+#          npm run build
 
-      - name: Test and build package
-        run: |
-          npm test
-          npm run build
       - name: Publish tag to npm
         if: contains(github.ref, 'tags')
         run: npm publish
