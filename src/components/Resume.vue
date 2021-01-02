@@ -164,7 +164,6 @@ export default {
   >.segments
     grid-area: segments
     margin: 0 2rem 0 0
-    background: tomato
     @media screen and (max-width: 240mm)
       margin: 0 2rem 0 2rem
   >.sidebar

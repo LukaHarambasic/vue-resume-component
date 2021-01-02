@@ -1,6 +1,6 @@
 {
   "name": "vue-resume-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A resume / cv component for Vue.js and Nuxt.js.",
   "main": "dist/resume.umd.js",
   "module": "dist/resume.esm.js",
@@ -13,6 +13,7 @@
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/resume.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/resume.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/resume.min.js",
+    "publish": "npm run build && npm publish",
     "publish:local": "npm run build && yalc push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
