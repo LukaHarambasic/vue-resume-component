@@ -2,7 +2,13 @@
 
 # vue-resume-component
 
-[Demo](https://vue-resume-component.luha.vercel.app/) - [npm](https://www.npmjs.com/package/vue-resume-component)
+[![demo](https://img.shields.io/badge/demo-live-informational)](https://vue-resume-component.vercel.app/)
+ 
+[![npm](https://img.shields.io/npm/v/vue-resume-component)](https://www.npmjs.com/package/vue-resume-component)
+
+[![npm bundle size](https://img.shields.io/bundlephobia/min/vue-resume-component)](https://www.npmjs.com/package/vue-resume-component)
+
+[![GitHub](https://img.shields.io/github/license/LukaHarambasic/vue-resume-component)](https://github.com/LukaHarambasic/vue-resume-component/blob/main/LICENSE)
 
 A resume / cv component for Vue.js and Nuxt.js.
 
