@@ -26,13 +26,13 @@
 </template>
 
 <script>
-import ResumeSegmentEntry from '@/components/ResumeSegmentEntry'
+import ResumeSegmentEntry from './ResumeSegmentEntry.vue'
 export default {
   name: 'ResumeSegments',
   components: { ResumeSegmentEntry },
   props: {
     segments: {
-      type: Object,
+      type: Array,
       required: true
       // TODO: add validation
     },
@@ -45,9 +45,9 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-segment
   margin: 0 0 2rem 0
-.resume-segment-list
-  margin: 0 0 0 .2rem
+  >.resume-segment-list
+    margin: 0 0 0 .2rem
 </style>

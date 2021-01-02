@@ -8,12 +8,12 @@
         v-if="from || to"
         class="resume-segment-entry-information-date"
       >
-        <div
+        <span
           v-if="from"
           class="resume-segment-entry-information-from"
           v-text="from"
         />
-        <div
+        <span
           v-if="to"
           class="resume-segment-entry-information-to"
           v-text="to"
@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-segment-entry
   position: relative
   display: flex
@@ -93,7 +93,7 @@ export default {
   &:before
     content: ''
     position: absolute
-    left: -.8rem
+    left: -13px
     background: var(--color-accent)
     width: 3px
     height: 100%
@@ -109,43 +109,40 @@ export default {
     border-radius: 50%
   &:first-of-type
     &:before
-      border-radius: $border-radius $border-radius 0 0
+      border-radius: var(--border-radius) var(--border-radius) 0 0
   &:last-of-type
     padding: 0
     &:before
-      border-radius: 0 0 $border-radius $border-radius
-.resume-segment-entry-information
-  display: flex
-  flex-direction: row
-  flex-wrap: nowrap
-  font-size: .8rem
-  font-style: italic
-  margin: 0 0 .2rem 0
-  @media screen and (max-width: $breakpoint)
-    flex-direction: column
-    margin: 0 0 .4rem 0
-  .resume-segment-entry-information-date
+      border-radius: 0 0 var(--border-radius) var(--border-radius)
+  >.resume-segment-entry-information
     display: flex
     flex-direction: row
     flex-wrap: nowrap
-    margin: 0 0 .25rem 0
-    .resume-segment-entry-information-from
-      margin: 0 .15rem 0 0
-      &::after
-        content: '-'
-        margin: 0 0 0 .15rem
-    .resume-segment-entry-information-to
-      margin: 0 .15rem 0 0
-      &::after
-        content: '•'
-        margin: 0 0 0 .25rem
-        @media screen and (max-width: $breakpoint)
-          content: ''
-          margin: 0
-.resume-segment-entry-title
-  margin: 0 0 .2rem 0
-  line-height: 1.5
-.resume-segment-entry-description
-  width: 100%
-  font-size: .9rem
+    font-size: .8rem
+    font-style: italic
+    @media screen and (max-width: 240mm)
+      flex-direction: column
+      margin: 0 0 .4rem 0
+    .resume-segment-entry-information-date
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      .resume-segment-entry-information-from
+        margin: 0 .15rem 0 0
+        &::after
+          content: '-'
+          margin: 0 0 0 .15rem
+      .resume-segment-entry-information-to
+        margin: 0 .15rem 0 0
+        &::after
+          content: '•'
+          margin: 0 0 0 .25rem
+          @media screen and (max-width: 240mm)
+            content: ''
+            margin: 0
+  >.resume-segment-entry-title
+    line-height: 1.5
+  >.resume-segment-entry-description
+    width: 100%
+    font-size: .9rem
 </style>

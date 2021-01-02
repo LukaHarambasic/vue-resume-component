@@ -1,0 +1,34 @@
+{
+  "style": {
+    "defaultStyling": true,
+    "colors": {
+      "primary": "#4A5428",
+      "accent": "#ECE0CF",
+      "background": "#FFFFFF",
+      "font": "#0F1108",
+      "fontOnPrimary": "#FFFFFF",
+      "fontOnAccent": "#FFFFFF"
+    },
+    "fonts": {
+      "headline": "Open Sans",
+      "body": "Open Sans"
+    }
+  },
+  "segments": {
+    "title": "Experience",
+    "order": "custom",
+    "entries": {
+      "order": "custom"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "order": "custom",
+    "entries": {
+      "order": "custom",
+      "display": "list",
+      "levelType": "number"
+    }
+  }
+}
+

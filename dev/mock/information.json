@@ -1,0 +1,31 @@
+{
+  "name": "Petra Pan",
+  "image": "/profile.jpeg",
+  "list": [
+    {
+      "title": "+49 18404 4849 393",
+      "url": "tel:+49184044849393"
+    },
+    {
+      "title": "petra@pan.neverland",
+      "url": "mailto:petra@pan.neverland"
+    }
+  ],
+  "footer": {
+    "logo": "/logo.svg",
+    "links": [
+      {
+      "title": "pan.neverland",
+      "url": "https://pan.neverland"
+      },
+      {
+        "title": "linkedin.com/in/petrapan",
+        "url": "http://linkedin.com/in/petrapan2123412341234"
+      },
+      {
+        "title": "github.com/PetraPan",
+        "url": "https://github.com/PetraPan341234123123512352341234124"
+      }
+    ]
+  }
+}

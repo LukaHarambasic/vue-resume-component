@@ -1,7 +1,7 @@
 <template>
   <div class="resume-header">
     <h1
-      v-text="settings.name"
+      v-text="name"
       class="resume-header-name"
     />
   </div>
@@ -11,8 +11,8 @@
 export default {
   name: 'ResumeHeader',
   props: {
-    settings: {
-      type: Object,
+    name: {
+      type: String,
       required: true
       // TODO: add validation
     }
@@ -25,13 +25,13 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-header
   background: var(--color-primary)
-  border-radius: $border-radius
+  border-radius: var(--border-radius)
   padding: 1rem
-.resume-header-name
-  color: var(--color-font-on-primary)
-  font-size: 2rem
-  font-weight: bold
+  >.resume-header-name
+    color: var(--color-font-on-primary)
+    font-size: 2rem
+    font-weight: bold
 </style>
