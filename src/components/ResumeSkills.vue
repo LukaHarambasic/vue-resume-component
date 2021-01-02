@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import ResumeSkillEntry from './ResumeSkillEntry'
+import ResumeSkillEntry from './ResumeSkillEntry.vue'
 export default {
   name: 'ResumeSkills',
   components: {

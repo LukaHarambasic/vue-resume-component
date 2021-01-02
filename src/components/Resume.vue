@@ -40,15 +40,13 @@
 </template>
 
 <script>
-import MOCK_RESUME from '../mock/resume.private.json'
-import MOCK_SETTINGS from '../mock/settings.private.json'
-import ResumeHeader from './ResumeHeader'
-import ResumeFooter from './ResumeFooter'
-import ResumeSegments from './ResumeSegments'
-import ResumeSkills from './ResumeSkills'
-import ResumeInformation from './ResumeInformation'
-import ResumeImage from './ResumeImage'
-import ResumeSlogan from './ResumeSlogan'
+import ResumeHeader from './ResumeHeader.vue'
+import ResumeFooter from './ResumeFooter.vue'
+import ResumeSegments from './ResumeSegments.vue'
+import ResumeSkills from './ResumeSkills.vue'
+import ResumeInformation from './ResumeInformation.vue'
+import ResumeImage from './ResumeImage.vue'
+import ResumeSlogan from './ResumeSlogan.vue'
 export default {
   name: 'Resume',
   components: {
@@ -67,13 +65,11 @@ export default {
     settings: {
       type: Object,
       required: true,
-      default: MOCK_SETTINGS
       // TODO add validator for mandatory fields
     },
     resume: {
       type: Object,
       required: true,
-      default: MOCK_RESUME
       // TODO add validator for mandatory fields
     }
   },

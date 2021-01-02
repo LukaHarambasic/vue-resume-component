@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import ResumeSegmentEntry from './ResumeSegmentEntry'
+import ResumeSegmentEntry from './ResumeSegmentEntry.vue'
 export default {
   name: 'ResumeSegments',
   components: { ResumeSegmentEntry },

@@ -30,8 +30,6 @@ export default {
       required: true
       // TODO: add validation
     }
-  },
-  computed: {
   }
 }
 </script>
