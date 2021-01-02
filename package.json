@@ -1,0 +1,28 @@
+{
+  "name": "vue-resume-component",
+  "version": "0.0.1",
+  "description": "A resume / cv component for Vue.js and Nuxt.js.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukaHarambasic/vue-resume-component.git"
+  },
+  "keywords": [
+    "resume",
+    "cv",
+    "vuejs",
+    "nuxtjs",
+    "vue",
+    "nuxt",
+    "component"
+  ],
+  "author": "Luka Harambasic",
+  "license": "See license in LICENSE",
+  "bugs": {
+    "url": "https://github.com/LukaHarambasic/vue-resume-component/issues"
+  },
+  "homepage": "https://github.com/LukaHarambasic/vue-resume-component#readme"
+}
