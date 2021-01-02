@@ -50,8 +50,6 @@ import skills from '@/content/cv/skills.json'
 import information from '@/content/cv/information.json'
 import settings from '@/content/cv/settings.json'
 export default {
-  name: 'Cv',
-  layout: 'cv',
   components: {
     resume,
   },
@@ -91,8 +89,6 @@ import skills from '@/content/cv/skills.json'
 import information from '@/content/cv/information.json'
 import settings from '@/content/cv/settings.json'
 export default {
-  name: 'Cv',
-  layout: 'cv',
   components: {
     resume,
   },
@@ -110,7 +106,7 @@ export default {
 
 ## Idea
 
-This is a component which can be implemented in existing websites or as standalone solution, e.g. with Nuxt or
+This is a component which can be implemented in existing websites or as standalone solution, e.g. with Nuxt.
 
 ### Structure
 
@@ -123,9 +119,9 @@ This is a component which can be implemented in existing websites or as standalo
 
 This component is using:
 
-- Vue3
-- CSS Variables
-- CSS Grid
+- Vue3 (isn't a beta, but isn't as stable as Vue2 (personal gut feeling))
+- [CSS Variables (Custom Properties)](https://caniuse.com/css-variables)
+- [CSS Grid](https://caniuse.com/css-grid)
 
 ## Roadmap
 
