@@ -29,9 +29,13 @@ export default {
 </script>
 
 <style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
 #app {
   background: #F0F0F0;
-  padding: 5rem 0
+  padding: 5rem 1rem
 }
 .resume {
   margin: 0 auto;

@@ -106,9 +106,6 @@ export default {
 
 <style lang="sass">
 \:root
-  --paper-width: 210mm
-  --paper-height: 297mm
-  --breakpoint: var(--paper-width) + 30mm
   --border-radius: 2px
   --transition: all 150ms ease-in-out
   --box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.1), 0 0 3px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1)
@@ -118,12 +115,12 @@ export default {
   grid-template-columns: 30% 1fr
   grid-template-rows: auto 1fr auto
   grid-gap: 2rem
-  width: var(--paper-width)
-  min-height: var(--paper-height)
+  width: 210mm
+  min-height: 297mm
   background: var(--color-background)
   border-radius: var(--border-radius)
   font-size: 1rem
-  @media screen and (max-width: var(--breakpoint))
+  @media screen and (max-width: 240mm)
     grid-template-areas: "header" "sidebar" "segments" "footer"
     grid-template-columns: 1fr
     grid-template-rows: auto auto auto auto
@@ -135,6 +132,8 @@ export default {
     &:after, &:before
       box-sizing: border-box
   // RESET
+  h1, h2, h3, h4, h5, h6
+    line-height: 1
   h1, h2, h3, h4, h5, h6, p, ul, ol
     margin: 0
     padding: 0
@@ -160,17 +159,17 @@ export default {
   >.header
     grid-area: header
     margin: 2rem 2rem 0 0
-    @media screen and (max-width: var(--breakpoint))
+    @media screen and (max-width: 240mm)
       margin: 2rem 2rem 0 2rem
   >.segments
     grid-area: segments
     margin: 0 2rem 0 0
-    @media screen and (max-width: var(--breakpoint))
+    @media screen and (max-width: 240mm)
       margin: 0 2rem 0 2rem
   >.sidebar
     grid-area: sidebar
     margin: 2rem 0 0 2rem
-    @media screen and (max-width: var(--breakpoint))
+    @media screen and (max-width: 240mm)
       margin: 0 2rem 0 2rem
   >.footer
     grid-area: footer

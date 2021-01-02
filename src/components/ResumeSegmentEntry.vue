@@ -8,12 +8,12 @@
         v-if="from || to"
         class="resume-segment-entry-information-date"
       >
-        <div
+        <span
           v-if="from"
           class="resume-segment-entry-information-from"
           v-text="from"
         />
-        <div
+        <span
           v-if="to"
           class="resume-segment-entry-information-to"
           v-text="to"
@@ -120,15 +120,13 @@ export default {
     flex-wrap: nowrap
     font-size: .8rem
     font-style: italic
-    margin: 0 0 .2rem 0
-    @media screen and (max-width: var(--breakpoint))
+    @media screen and (max-width: 240mm)
       flex-direction: column
       margin: 0 0 .4rem 0
     .resume-segment-entry-information-date
       display: flex
       flex-direction: row
       flex-wrap: nowrap
-      margin: 0 0 .25rem 0
       .resume-segment-entry-information-from
         margin: 0 .15rem 0 0
         &::after
@@ -139,11 +137,10 @@ export default {
         &::after
           content: '•'
           margin: 0 0 0 .25rem
-          @media screen and (max-width: var(--breakpoint))
+          @media screen and (max-width: 240mm)
             content: ''
             margin: 0
   >.resume-segment-entry-title
-    margin: 0 0 .2rem 0
     line-height: 1.5
   >.resume-segment-entry-description
     width: 100%

@@ -50,16 +50,16 @@ export default {
     align-content: center
     align-items: center
     width: auto
-    @media screen and (max-width: var(--breakpoint))
+    @media screen and (max-width: 240mm)
       flex-direction: column
     .resume-footer-link
       margin: 0 .5rem 0 0
-      @media screen and (max-width: var(--breakpoint))
+      @media screen and (max-width: 240mm)
         margin: 0 0 .5rem 0
       &::after
         content: '•'
         margin: 0 0 0 .5rem
-        @media screen and (max-width: var(--breakpoint))
+        @media screen and (max-width: 240mm)
           content: ''
       &:last-of-type
         margin: 0
