@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-image
   margin: 0 0 2rem 0
   >img

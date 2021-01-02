@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-segment
   margin: 0 0 2rem 0
   >.resume-segment-list

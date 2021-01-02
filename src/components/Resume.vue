@@ -42,6 +42,7 @@
 <script>
 import MOCK_RESUME from '../mock/resume.private.json'
 import MOCK_SETTINGS from '../mock/settings.private.json'
+import '../reset.sass'
 import ResumeHeader from './ResumeHeader'
 import ResumeFooter from './ResumeFooter'
 import ResumeSegments from './ResumeSegments'
@@ -99,7 +100,8 @@ export default {
 </script>
 
 <style lang="sass">
-*:root
+
+\:root
   --paper-width: 210mm
   --paper-height: 297mm
   --breakpoint: var(--paper-width) + 30mm
@@ -116,12 +118,30 @@ export default {
   min-height: var(--paper-height)
   background: var(--color-background)
   border-radius: var(--border-radius)
+  font-size: 1rem
   @media screen and (max-width: var(--breakpoint))
     grid-template-areas: "header" "sidebar" "segments" "footer"
     grid-template-columns: 1fr
     grid-template-rows: auto auto auto auto
     width: 100%
     min-height: auto
+  *
+    font-family: var(--font-body)
+  h1, h2, h3
+    font-family: var(--font-headline)
+  h2
+    font-size: 1.2rem
+    font-weight: bold
+    margin: 0 0 .75rem 0
+  h3
+    font-size: 1rem
+    font-weight: bold
+  p
+    line-height: 1.5
+    overflow-wrap: break-word
+    word-wrap: break-word
+    word-break: break-word
+    hyphens: auto
   >.header
     grid-area: header
     margin: 2rem 2rem 0 0

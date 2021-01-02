@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-skills
   background: var(--color-accent)
   border-radius: var(--border-radius)

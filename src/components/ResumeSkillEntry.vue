@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-skill-entry
   margin: 0
   display: inline

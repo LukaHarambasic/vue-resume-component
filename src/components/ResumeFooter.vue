@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-footer
   position: relative
   color: var(--color-font-on-primary)

@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-header
   background: var(--color-primary)
   border-radius: var(--border-radius)

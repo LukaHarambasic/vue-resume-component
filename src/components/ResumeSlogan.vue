@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .resume-slogan
   margin: 0 0 2rem 0
   background: var(--color-accent)
