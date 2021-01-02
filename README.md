@@ -125,13 +125,13 @@ This component is using:
 
 ## Roadmap
 
-- [] Enable all customizations from settings
-- [] Allow print to PDF
-- [] Add docu with vuepress
-- [] Provide example configs (currently visible in [demo/mock](https://github.com/LukaHarambasic/vue-resume-component/tree/main/demo/mock))
-- [] Add different demos
-- [] Provide ready to clone [nuxt/content](https://content.nuxtjs.org/) repo with Deploy to Vercel & Netlify button
-- [] Add tests
+- [ ] Enable all customizations from settings
+- [ ] Allow print to PDF
+- [ ] Add docu with vuepress
+- [ ] Provide example configs (currently visible in [demo/mock](https://github.com/LukaHarambasic/vue-resume-component/tree/main/demo/mock))
+- [ ] Add different demos
+- [ ] Provide ready to clone [nuxt/content](https://content.nuxtjs.org/) repo with Deploy to Vercel & Netlify button
+- [ ] Add tests
 
 ## Development
 
