@@ -42,7 +42,6 @@
 <script>
 import MOCK_RESUME from '../mock/resume.private.json'
 import MOCK_SETTINGS from '../mock/settings.private.json'
-import '../reset.sass'
 import ResumeHeader from './ResumeHeader'
 import ResumeFooter from './ResumeFooter'
 import ResumeSegments from './ResumeSegments'
@@ -100,7 +99,6 @@ export default {
 </script>
 
 <style lang="sass">
-
 \:root
   --paper-width: 210mm
   --paper-height: 297mm
@@ -127,6 +125,16 @@ export default {
     min-height: auto
   *
     font-family: var(--font-body)
+    box-sizing: border-box
+    &:after, &:before
+      box-sizing: border-box
+  // RESET
+  h1, h2, h3, h4, h5, h6, p, ul, ol
+    margin: 0
+    padding: 0
+  ul, ol
+    list-style: none
+  // TYPO
   h1, h2, h3
     font-family: var(--font-headline)
   h2
@@ -142,6 +150,7 @@ export default {
     word-wrap: break-word
     word-break: break-word
     hyphens: auto
+  // ALIGNMENT
   >.header
     grid-area: header
     margin: 2rem 2rem 0 0

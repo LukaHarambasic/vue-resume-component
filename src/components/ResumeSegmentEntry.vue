@@ -93,7 +93,7 @@ export default {
   &:before
     content: ''
     position: absolute
-    left: -.8rem
+    left: -13px
     background: var(--color-accent)
     width: 3px
     height: 100%

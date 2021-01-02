@@ -15,6 +15,7 @@
     <img
       class="resume-footer-logo"
       :src="settings.logo"
+      v-if="settings.logo"
       alt="Decorative logo"
     >
   </div>

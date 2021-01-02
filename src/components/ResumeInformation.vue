@@ -39,7 +39,7 @@ export default {
   background: var(--color-accent)
   border-radius: var(--border-radius)
   padding: 1rem
-  >.resume-information-entry
+  .resume-information-entry
     margin: 0 0 .5rem 0
     overflow-wrap: break-word
     word-wrap: break-word
