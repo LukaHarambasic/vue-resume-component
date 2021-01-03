@@ -40,10 +40,10 @@
 </template>
 
 <script>
-import MOCK_SETTINGS from '../../demo/mock/settings.json'
-import MOCK_SEGMENTS from '../../demo/mock/segments.json'
-import MOCK_SKILLS from '../../demo/mock/skills.json'
-import MOCK_INFORMATION from '../../demo/mock/information.json'
+// import MOCK_SETTINGS from '../../demo/mock/settings.json'
+// import MOCK_SEGMENTS from '../../demo/mock/segments.json'
+// import MOCK_SKILLS from '../../demo/mock/skills.json'
+// import MOCK_INFORMATION from '../../demo/mock/information.json'
 
 import ResumeHeader from './ResumeHeader.vue'
 import ResumeFooter from './ResumeFooter.vue'
@@ -70,25 +70,25 @@ export default {
     settings: {
       type: Object,
       required: true,
-      default: MOCK_SETTINGS
+      // default: MOCK_SETTINGS
       // TODO add validator for mandatory fields
     },
     information: {
       type: Object,
       required: true,
-      default: MOCK_INFORMATION
+      // default: MOCK_INFORMATION
       // TODO add validator for mandatory fields
     },
     segments: {
       type: Array,
       required: true,
-      default: MOCK_SEGMENTS
+      // default: MOCK_SEGMENTS
       // TODO add validator for mandatory fields
     },
     skills: {
       type: Array,
       required: true,
-      default: MOCK_SKILLS
+      // default: MOCK_SKILLS
       // TODO add validator for mandatory fields
     },
   },
