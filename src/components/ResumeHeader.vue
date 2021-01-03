@@ -33,9 +33,9 @@ export default {
   @media (prefers-color-scheme: dark)
     background: var(--color-dark-primary)
   >.resume-header-name
-    color: var(--color-fontOnPrimary)
+    color: var(--color-light-fontOnPrimary)
     font-size: 2rem
     font-weight: bold
     @media (prefers-color-scheme: dark)
-      color: var(--color-light-fontOnPrimary)
+      color: var(--color-dark-fontOnPrimary)
 </style>
