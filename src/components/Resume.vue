@@ -129,10 +129,12 @@ export default {
   width: 210mm
   min-height: 297mm
   background: var(--color-light-background)
+  color: var(--color-light-font)
   border-radius: var(--border-radius)
   font-size: 1rem
   @media (prefers-color-scheme: dark)
     background: var(--color-dark-background)
+    color: var(--color-dark-font)
   @media screen and (max-width: 240mm)
     grid-template-areas: "header" "sidebar" "segments" "footer"
     grid-template-columns: 1fr
