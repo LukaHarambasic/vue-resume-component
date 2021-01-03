@@ -127,7 +127,7 @@ export default {
     font-style: italic
     @media screen and (max-width: 240mm)
       flex-direction: column
-      margin: 0 0 .4rem 0
+      margin: 0 0 .25rem 0
     .resume-segment-entry-information-date
       display: flex
       flex-direction: row
@@ -147,6 +147,7 @@ export default {
             margin: 0
   >.resume-segment-entry-title
     line-height: 1.5
+    margin: 0 0 .25rem 0
   >.resume-segment-entry-description
     width: 100%
     font-size: .9rem
