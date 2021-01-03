@@ -94,9 +94,11 @@ export default {
     content: ''
     position: absolute
     left: -13px
-    background: var(--color-accent)
+    background: var(--color-light-accent)
     width: 3px
     height: 100%
+    @media (prefers-color-scheme: dark)
+      background: var(--color-dark-accent)
   &:after
     content: ''
     position: absolute
@@ -104,9 +106,12 @@ export default {
     top: 18px
     width: .75rem
     height: .75rem
-    background: var(--color-accent)
-    border: 2px solid var(--color-background)
+    background: var(--color-light-accent)
+    border: 2px solid var(--color-light-background)
     border-radius: 50%
+    @media (prefers-color-scheme: dark)
+      background: var(--color-dark-accent)
+      border-color: var(--color-dark-background)
   &:first-of-type
     &:before
       border-radius: var(--border-radius) var(--border-radius) 0 0

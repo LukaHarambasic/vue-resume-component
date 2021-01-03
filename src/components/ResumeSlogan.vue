@@ -19,8 +19,10 @@ export default {
 <style lang="sass">
 .resume-slogan
   margin: 0 0 2rem 0
-  background: var(--color-accent)
+  background: var(--color-light-ssaccent)
   border-radius: var(--border-radius)
   padding: 1rem
   font-size: 0.9rem
+  @media (prefers-color-scheme: dark)
+    background: var(--color-dark-accent)
 </style>

@@ -37,11 +37,14 @@ export default {
 <style lang="sass">
 .resume-footer
   position: relative
-  color: var(--color-font-on-primary)
-  background: var(--color-primary)
+  color: var(--color-light-font-on-primary)
+  background: var(--color-light-primary)
   border-radius: 0 0 var(--border-radius) var(--border-radius)
   font-size: 0.9rem
   padding: 1rem
+  @media (prefers-color-scheme: dark)
+    color: var(--color-dark-font-on-primary)
+    background: var(--color-dark-primary)
   >.resume-footer-links
     display: flex
     flex-direction: row
@@ -67,12 +70,16 @@ export default {
           content: ''
           margin: 0
       a
-        color: var(--color-font-on-primary)
+        color: var(--color-light-font-on-primary)
         transition: var(--transition)
         text-decoration: none
         border-bottom: 1px transparent solid
         &:hover
-          border-bottom-color: var(--color-font-on-primary)
+          border-bottom-color: var(--color-light-font-on-primary)
+        @media (prefers-color-scheme: dark)
+          color: var(--color-dark-font-on-primary)
+          &:hover
+            border-bottom-color: var(--color-dark-font-on-primary)
   >.resume-footer-logo
     position: absolute
     right: 1.5rem

@@ -2,12 +2,22 @@
   "style": {
     "defaultStyling": true,
     "colors": {
-      "primary": "#4A5428",
-      "accent": "#ECE0CF",
-      "background": "#FFFFFF",
-      "font": "#0F1108",
-      "fontOnPrimary": "#FFFFFF",
-      "fontOnAccent": "#FFFFFF"
+      "light": {
+        "primary": "#4A5428",
+        "accent": "#ECE0CF",
+        "background": "#FFFFFF",
+        "font": "#0F1108",
+        "fontOnPrimary": "#FFFFFF",
+        "fontOnAccent": "#FFFFFF"
+      },
+      "dark": {
+        "primary": "tomato",
+        "accent": "#ECE0CF",
+        "background": "#FFFFFF",
+        "font": "#0F1108",
+        "fontOnPrimary": "#FFFFFF",
+        "fontOnAccent": "#FFFFFF"
+      }
     },
     "fonts": {
       "headline": "Open Sans",

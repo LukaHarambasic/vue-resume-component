@@ -40,6 +40,11 @@
 </template>
 
 <script>
+import MOCK_SETTINGS from '../../demo/mock/settings.json'
+import MOCK_SEGMENTS from '../../demo/mock/segments.json'
+import MOCK_SKILLS from '../../demo/mock/skills.json'
+import MOCK_INFORMATION from '../../demo/mock/information.json'
+
 import ResumeHeader from './ResumeHeader.vue'
 import ResumeFooter from './ResumeFooter.vue'
 import ResumeSegments from './ResumeSegments.vue'
@@ -65,21 +70,25 @@ export default {
     settings: {
       type: Object,
       required: true,
+      default: MOCK_SETTINGS
       // TODO add validator for mandatory fields
     },
     information: {
       type: Object,
       required: true,
+      default: MOCK_INFORMATION
       // TODO add validator for mandatory fields
     },
     segments: {
       type: Array,
       required: true,
+      default: MOCK_SEGMENTS
       // TODO add validator for mandatory fields
     },
     skills: {
       type: Array,
       required: true,
+      default: MOCK_SKILLS
       // TODO add validator for mandatory fields
     },
   },
@@ -87,18 +96,20 @@ export default {
     setCssVariables (document) {
       const root = document.documentElement
       // TODO test if colors are valid hex colors, if not use defaults
-      const colors = this.settings.style.colors
-      // TODO maybe write helper
-      root.style.setProperty('--color-primary', colors.primary)
-      root.style.setProperty('--color-accent', colors.accent)
-      root.style.setProperty('--color-font', colors.font)
-      root.style.setProperty('--color-background', colors.background)
-      root.style.setProperty('--color-font-on-primary', colors.fontOnPrimary)
-      root.style.setProperty('--color-font-on-accent', colors.fontOnAccent)
       // TODO use defaults if nothing is provided
+      const colors = this.settings.style.colors
+      const light = colors.light
+      const dark = colors.dark
+      Object.entries(light).forEach(([key, value]) => {
+        root.style.setProperty(`--color-light-${key}`, value)
+      })
+      Object.entries(dark).forEach(([key, value]) => {
+        root.style.setProperty(`--color-dark-${key}`, value)
+      })
       const fonts = this.settings.style.fonts
-      root.style.setProperty('--font-headline', fonts.headline)
-      root.style.setProperty('--font-body', fonts.body)
+      Object.entries(fonts).forEach(([key, value]) => {
+        root.style.setProperty(`--color-${key}`, value)
+      })
     }
   }
 }
@@ -117,9 +128,11 @@ export default {
   grid-gap: 2rem
   width: 210mm
   min-height: 297mm
-  background: var(--color-background)
+  background: var(--color-light-background)
   border-radius: var(--border-radius)
   font-size: 1rem
+  @media (prefers-color-scheme: dark)
+    background: var(--color-dark-background)
   @media screen and (max-width: 240mm)
     grid-template-areas: "header" "sidebar" "segments" "footer"
     grid-template-columns: 1fr
