@@ -132,6 +132,7 @@ This component is using:
 - [ ] Add different demos
 - [ ] Provide ready to clone [nuxt/content](https://content.nuxtjs.org/) repo with Deploy to Vercel & Netlify button
 - [ ] Add tests
+- [ ] Add configurable dark mode
 
 ## Development
 
