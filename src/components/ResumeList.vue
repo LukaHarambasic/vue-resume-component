@@ -51,14 +51,14 @@ export default {
     &:last-of-type
       margin: 0
     a
-      color: var(--color-light-font)
+      color: var(--color-light-fontOnAccent)
       transition: var(--transition)
       text-decoration: none
       border-bottom: 1px transparent solid
       &:hover
-        border-bottom-color: var(--color-light-font)
+        border-bottom-color: var(--color-light-fontOnAccent)
       @media (prefers-color-scheme: dark)
-        color: var(--color-dark-font)
+        color: var(--color-dark-fontOnAccent)
         &:hover
-          border-bottom-color: var(--color-dark-font)
+          border-bottom-color: var(--color-dark-fontOnAccent)
 </style>
