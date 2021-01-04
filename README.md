@@ -1,5 +1,7 @@
 > This package is WIP - it's functionally working, but customisations aren't implemented.
 
+![Logo](docs/logo.svg | width=100)
+
 # vue-resume-component
 
 [![demo](https://img.shields.io/badge/demo-live-informational)](https://vue-resume-component.vercel.app/) [![npm](https://img.shields.io/npm/v/vue-resume-component)](https://www.npmjs.com/package/vue-resume-component) [![npm bundle size](https://img.shields.io/bundlephobia/min/vue-resume-component)](https://www.npmjs.com/package/vue-resume-component) [![GitHub](https://img.shields.io/github/license/LukaHarambasic/vue-resume-component)](https://github.com/LukaHarambasic/vue-resume-component/blob/main/LICENSE)
