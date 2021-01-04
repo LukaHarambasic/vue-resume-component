@@ -1,6 +1,6 @@
 > This package is WIP - it's functionally working, but customisations aren't implemented.
 
-![Logo](docs/logo.svg | width=100)
+![Logo](docs/logo.svg =100x)
 
 # vue-resume-component
 
