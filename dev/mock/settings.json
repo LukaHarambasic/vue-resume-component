@@ -6,8 +6,8 @@
       "accent": "#ECE0CF",
       "background": "#FFFFFF",
       "font": "#0F1108",
-      "fontOnPrimary": "#FFFFFF",
-      "fontOnAccent": "#FFFFFF"
+      "font-on-primary": "#FFFFFF",
+      "font-on-accent": "#FFFFFF"
     },
     "fonts": {
       "headline": "Open Sans",

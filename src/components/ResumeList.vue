@@ -36,13 +36,10 @@ export default {
 <style lang="sass">
 .resume-list
   margin: 0 0 2rem 0
-  color: var(--color-light-fontOnAccent)
-  background: var(--color-light-accent)
+  color: var(--color-font-on-accent)
+  background: var(--color-accent)
   border-radius: var(--border-radius)
   padding: 1rem
-  @media (prefers-color-scheme: dark)
-    color: var(--color-dark-fontOnAccent)
-    background: var(--color-dark-accent)
   .resume-list-entry
     margin: 0 0 .5rem 0
     overflow-wrap: break-word
@@ -51,14 +48,10 @@ export default {
     &:last-of-type
       margin: 0
     a
-      color: var(--color-light-fontOnAccent)
+      color: var(--color-font-on-accent)
       transition: var(--transition)
       text-decoration: none
       border-bottom: 1px transparent solid
       &:hover
-        border-bottom-color: var(--color-light-fontOnAccent)
-      @media (prefers-color-scheme: dark)
-        color: var(--color-dark-fontOnAccent)
-        &:hover
-          border-bottom-color: var(--color-dark-fontOnAccent)
+        border-bottom-color: var(--color-font-on-accent)
 </style>

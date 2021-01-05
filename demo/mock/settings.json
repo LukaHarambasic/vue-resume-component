@@ -7,16 +7,16 @@
         "accent": "#ECE0CF",
         "background": "#FFFFFF",
         "font": "#0F1108",
-        "fontOnPrimary": "#FFFFFF",
-        "fontOnAccent": "#FFFFFF"
+        "font-on-primary": "#FFFFFF",
+        "font-on-accent": "#0F1108"
       },
       "dark": {
         "primary": "tomato",
         "accent": "#ECE0CF",
         "background": "#FFFFFF",
         "font": "#0F1108",
-        "fontOnPrimary": "#FFFFFF",
-        "fontOnAccent": "#FFFFFF"
+        "font-on-primary": "#FFFFFF",
+        "font-on-accent": "#0F1108"
       }
     },
     "fonts": {

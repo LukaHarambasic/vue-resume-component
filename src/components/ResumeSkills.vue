@@ -47,13 +47,10 @@ export default {
 
 <style lang="sass">
 .resume-skills
-  color: var(--color-light-fontOnAccent)
-  background: var(--color-light-accent)
+  color: var(--color-font-on-accent)
+  background: var(--color-accent)
   border-radius: var(--border-radius)
   padding: 1rem
-  @media (prefers-color-scheme: dark)
-    color: var(--color-dark-fontOnAccent)
-    background: var(--color-dark-accent)
   >.resume-skills-category
     margin: 0 0 1rem 0
     .resume-skills-category-entries

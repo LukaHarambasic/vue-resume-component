@@ -93,23 +93,28 @@ export default {
     },
   },
   methods: {
-    setCssVariables (document) {
-      const root = document.documentElement
+    setCssVariables (doc) {
       // TODO test if colors are valid hex colors, if not use defaults
       // TODO use defaults if nothing is provided
       const colors = this.settings.style.colors
-      const light = colors.light
-      const dark = colors.dark
-      Object.entries(light).forEach(([key, value]) => {
-        root.style.setProperty(`--color-light-${key}`, value)
-      })
-      Object.entries(dark).forEach(([key, value]) => {
-        root.style.setProperty(`--color-dark-${key}`, value)
-      })
-      const fonts = this.settings.style.fonts
-      Object.entries(fonts).forEach(([key, value]) => {
-        root.style.setProperty(`--color-${key}`, value)
-      })
+      const colorsLight = Object.entries(colors.light).map(([key, value]) => `--color-${key}: ${value};`).join(' ')
+      const colorsDark = Object.entries(colors.dark).map(([key, value]) => `--color-${key}: ${value};`).join(' ')
+      const fonts = Object.entries(this.settings.style.fonts).map(([key, value]) => `--font-${key}: ${value};`).join(' ')
+      const styleNode = document.createTextNode(`
+      :root {
+        ${colorsLight}
+        ${fonts}
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          ${colorsDark}
+        }
+      }
+      `)
+      const styleElement = doc.createElement('style')
+      styleElement.appendChild(styleNode)
+      const ref = doc.querySelector('style')
+      ref.parentNode.insertBefore(styleElement, ref)
     }
   }
 }
@@ -117,6 +122,8 @@ export default {
 
 <style lang="sass">
 \:root
+  @media (prefers-color-scheme: dark)
+    background: lightseagreen
   --border-radius: 2px
   --transition: all 150ms ease-in-out
   --box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.1), 0 0 3px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1)
@@ -128,13 +135,10 @@ export default {
   grid-gap: 2rem
   width: 210mm
   min-height: 297mm
-  background: var(--color-light-background)
-  color: var(--color-light-font)
+  background: var(--color-background)
+  color: var(--color-font)
   border-radius: var(--border-radius)
   font-size: 1rem
-  @media (prefers-color-scheme: dark)
-    background: var(--color-dark-background)
-    color: var(--color-dark-font)
   @media screen and (max-width: 240mm)
     grid-template-areas: "header" "sidebar" "segments" "footer"
     grid-template-columns: 1fr
