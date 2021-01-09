@@ -123,7 +123,6 @@ export default {
 <style lang="sass">
 \:root
   @media (prefers-color-scheme: dark)
-    background: lightseagreen
   --border-radius: 2px
   --transition: all 150ms ease-in-out
   --box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.1), 0 0 3px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1)
