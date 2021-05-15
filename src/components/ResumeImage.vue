@@ -1,8 +1,8 @@
 <template>
   <div class="resume-image">
     <img
-      :src="image"
-      alt="Resume picture"
+        :src="image"
+        alt="Resume picture"
     >
   </div>
 </template>

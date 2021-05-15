@@ -1,8 +1,8 @@
 <template>
   <div class="resume-header">
     <h1
-      v-text="name"
-      class="resume-header-name"
+        v-text="name"
+        class="resume-header-name"
     />
   </div>
 </template>
