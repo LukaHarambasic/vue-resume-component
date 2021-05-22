@@ -151,3 +151,4 @@ This component is using:
 3. Execute `npm run publish:local` in the root directory, which will cause a build and `yalc publish`.
 4. After this you can hard reload your localhost to see the changes, hot reload isn't working every time.
 5. If you want to deploy your changes locally, start over at `3.`.
+
