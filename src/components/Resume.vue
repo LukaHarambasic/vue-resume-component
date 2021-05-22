@@ -1,57 +1,52 @@
 <template>
   <div class="resume">
     <resume-header
-      class="header"
-      :name="information.name"
+        class="header"
+        :name="information.name"
     />
     <resume-segments
-      class="segments"
-      :segments="segments"
-      :settings="settings.segments"
+        class="segments"
+        :segments="segments"
+        :settings="settings.segments"
     />
     <aside class="sidebar">
       <resume-image
-        class="image"
-        :image="information.image"
-        v-if="information.image"
+          class="image"
+          :image="information.image"
+          v-if="information.image"
       />
       <resume-slogan
-        class="slogan"
-        :slogan="information.slogan"
-        v-if="information.slogan"
+          class="slogan"
+          :slogan="information.slogan"
+          v-if="information.slogan"
       />
       <resume-list
-        :list="information.list"
-        class="list"
-        v-if="information.list"
+          :list="information.list"
+          class="list"
+          v-if="information.list"
       />
       <resume-skills
-        class="skills"
-        :skills="skills"
-        :settings="settings.skills"
-        v-if="skills"
+          class="skills"
+          :skills="skills"
+          :settings="settings.skills"
+          v-if="skills"
       />
     </aside>
     <resume-footer
-      class="footer"
-      :information="information.footer"
+        class="footer"
+        :information="information.footer"
     />
   </div>
 </template>
 
 <script>
-// import MOCK_SETTINGS from '../../demo/mock/settings.json'
-// import MOCK_SEGMENTS from '../../demo/mock/segments.json'
-// import MOCK_SKILLS from '../../demo/mock/skills.json'
-// import MOCK_INFORMATION from '../../demo/mock/information.json'
-
-import ResumeHeader from './ResumeHeader.vue'
-import ResumeFooter from './ResumeFooter.vue'
-import ResumeSegments from './ResumeSegments.vue'
-import ResumeSkills from './ResumeSkills.vue'
-import ResumeList from './ResumeList.vue'
-import ResumeImage from './ResumeImage.vue'
-import ResumeSlogan from './ResumeSlogan.vue'
+import ResumeHeader from '@/components/ResumeHeader.vue'
+import ResumeFooter from '@/components/ResumeFooter.vue'
+import ResumeSegments from '@/components/ResumeSegments.vue'
+import ResumeSkills from '@/components/ResumeSkills.vue'
+import ResumeList from '@/components/ResumeList.vue'
+import ResumeImage from '@/components/ResumeImage.vue'
+import ResumeSlogan from '@/components/ResumeSlogan.vue'
 export default {
   name: 'Resume',
   components: {
@@ -70,25 +65,21 @@ export default {
     settings: {
       type: Object,
       required: true,
-      // default: MOCK_SETTINGS
       // TODO add validator for mandatory fields
     },
     information: {
       type: Object,
       required: true,
-      // default: MOCK_INFORMATION
       // TODO add validator for mandatory fields
     },
     segments: {
       type: Array,
       required: true,
-      // default: MOCK_SEGMENTS
       // TODO add validator for mandatory fields
     },
     skills: {
       type: Array,
       required: true,
-      // default: MOCK_SKILLS
       // TODO add validator for mandatory fields
     },
   },
@@ -138,6 +129,7 @@ export default {
   color: var(--color-font)
   border-radius: var(--border-radius)
   font-size: 1rem
+  font-family: inherit
   @media screen and (max-width: 240mm)
     grid-template-areas: "header" "sidebar" "segments" "footer"
     grid-template-columns: 1fr
@@ -155,6 +147,7 @@ export default {
   h1, h2, h3, h4, h5, h6, p, ul, ol
     margin: 0
     padding: 0
+    font-family: inherit
   ul, ol
     list-style: none
   // TYPO

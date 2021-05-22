@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "vue-resume-component": {
-      "signature": "2f740350b6443d2dabbc5a8970023d32",
-      "file": true
-    }
-  }
-}

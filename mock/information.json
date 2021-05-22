@@ -1,6 +1,6 @@
 {
   "name": "Petra Pan",
-  "image": "/profile.jpeg",
+  "image": "/petra-pan-profile.jpeg",
   "list": [
     {
       "title": "+49 18404 4849 393",
@@ -12,11 +12,11 @@
     }
   ],
   "footer": {
-    "logo": "/logo.svg",
+    "logo": "/petra-pan-logo.svg",
     "links": [
       {
-      "title": "pan.neverland",
-      "url": "https://pan.neverland"
+        "title": "pan.neverland",
+        "url": "https://pan.neverland"
       },
       {
         "title": "linkedin.com/in/petrapan",

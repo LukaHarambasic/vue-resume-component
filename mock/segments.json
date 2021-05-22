@@ -23,7 +23,7 @@
     "entries": [
       {
         "title": "Unicorns nature conservation",
-        "position":  "Guard",
+        "position": "Guard",
         "location": "Dreamland",
         "from": "2021",
         "to": "2025",
@@ -31,7 +31,7 @@
       },
       {
         "title": "Unicorns nature conservation2",
-        "position":  "Guard2",
+        "position": "Guard2",
         "location": "Dreamland2",
         "from": "2021",
         "to": "2025",
@@ -44,7 +44,7 @@
     "entries": [
       {
         "title": "Voluntary3",
-        "position":  "Guard3",
+        "position": "Guard3",
         "location": "Dreamland3",
         "from": "2021",
         "to": "2025",
@@ -52,7 +52,7 @@
       },
       {
         "title": "Voluntary4",
-        "position":  "Guard4",
+        "position": "Guard4",
         "location": "Dreamland4",
         "from": "2021",
         "to": "2025",
@@ -61,4 +61,3 @@
     ]
   }
 ]
-

@@ -1,6 +1,6 @@
 {
   "name": "vue-resume-component",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "A resume / CV component for Vue.js and Nuxt.js.",
   "main": "dist/resume.umd.js",
   "module": "dist/resume.esm.js",
@@ -9,12 +9,8 @@
     "./sfc": "src/resume.vue"
   },
   "scripts": {
-    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/resume.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/resume.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/resume.min.js",
-    "publish:local": "npm run build && yalc push",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -30,20 +26,16 @@
     "component"
   ],
   "author": "Luka Harambasic",
-  "license": "See license in LICENSE",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/LukaHarambasic/vue-resume-component/issues"
   },
   "homepage": "https://github.com/LukaHarambasic/vue-resume-component#readme",
-  "dependencies": {
-  },
   "devDependencies": {
-    "rollup": "^2.36.1",
-    "@rollup/plugin-buble": "^0.21.3",
-    "@rollup/plugin-commonjs": "^11.1.0",
-    "rollup-plugin-vue": "^5.0.1",
-    "vue": "^2.6.10",
-    "vue-template-compiler": "^2.6.10",
-    "sass-loader": "^10.1.0"
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.11",
+    "sass": "^1.32.12",
+    "vite": "^2.2.3",
+    "vue": "^3.0.5"
   }
 }

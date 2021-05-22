@@ -2,21 +2,21 @@
   <div class="resume-skills">
     <h2>Skills</h2>
     <div
-      v-for="(skill, i) in skills"
-      :key="i"
-      class="resume-skills-category"
+        v-for="(skill, i) in skills"
+        :key="i"
+        class="resume-skills-category"
     >
       <h3
-        class="resume-skills-category-title"
-        v-text="skill.title"
+          class="resume-skills-category-title"
+          v-text="skill.title"
       />
       <ul class="resume-skills-category-entries">
         <resume-skill-entry
-          v-for="(entry, j) in skill.entries"
-          :key="j"
-          :title="entry.title"
-          :level="entry.level"
-          class="resume-skills-category-entry"
+            v-for="(entry, j) in skill.entries"
+            :key="j"
+            :title="entry.title"
+            :level="entry.level"
+            class="resume-skills-category-entry"
         />
       </ul>
     </div>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import ResumeSkillEntry from './ResumeSkillEntry.vue'
+import ResumeSkillEntry from '@/components/ResumeSkillEntry.vue'
 export default {
   name: 'ResumeSkills',
   components: {

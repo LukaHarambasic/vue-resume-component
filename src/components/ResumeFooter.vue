@@ -2,21 +2,21 @@
   <div class="resume-footer">
     <ul class="resume-footer-links">
       <li
-        class="resume-footer-link"
-        v-for="(link, i) in information.links"
-        :key="i"
+          class="resume-footer-link"
+          v-for="(link, i) in information.links"
+          :key="i"
       >
         <a
-          :href="link.url"
-          v-text="link.title"
+            :href="link.url"
+            v-text="link.title"
         />
       </li>
     </ul>
     <img
-      class="resume-footer-logo"
-      :src="information.logo"
-      v-if="information.logo"
-      alt="Decorative logo"
+        class="resume-footer-logo"
+        :src="information.logo"
+        v-if="information.logo"
+        alt="Decorative logo"
     >
   </div>
 </template>
