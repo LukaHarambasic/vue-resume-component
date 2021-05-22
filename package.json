@@ -8,6 +8,9 @@
   "browser": {
     "./sfc": "src/resume.vue"
   },
+  "engines": {
+    "node": "14"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build"
