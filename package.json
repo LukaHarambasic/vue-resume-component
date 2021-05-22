@@ -2,6 +2,9 @@
   "name": "vue-resume-component",
   "version": "0.3.0",
   "description": "A resume / CV component for Vue.js and Nuxt.js.",
+  "engines": {
+    "node": "14"
+  },
   "main": "dist/resume.umd.js",
   "module": "dist/resume.esm.js",
   "unpkg": "dist/resume.min.js",
