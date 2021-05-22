@@ -37,12 +37,12 @@ JSONs are just working out of the box, you could also include them in `data` in 
 
 ```vue
 <template>
-    <resume
-      :segments="segments"
-      :skills="skills"
-      :information="information"
-      :settings="settings"
-    />
+  <resume
+     :segments="segments"
+     :skills="skills"
+     :information="information"
+     :settings="settings"
+  />
 </template>
 
 <script>
@@ -53,17 +53,17 @@ import skills from '@/content/cv/skills.json'
 import information from '@/content/cv/information.json'
 import settings from '@/content/cv/settings.json'
 export default {
-  components: {
-    resume,
-  },
-  data() {
-    return {
-      segments,
-      skills,
-      information,
-      settings,
-    }
-  },
+   components: {
+      resume,
+   },
+   data() {
+      return {
+         segments,
+         skills,
+         information,
+         settings,
+      }
+   },
 }
 </script>
 ```
@@ -74,14 +74,14 @@ The only difference is that the component is wrapped in `<client-only>`.
 
 ```vue
 <template>
-  <client-only>
-    <resume
-      :segments="segments"
-      :skills="skills"
-      :information="information"
-      :settings="settings"
-    />
-  </client-only>
+   <client-only>
+      <resume
+         :segments="segments"
+         :skills="skills"
+         :information="information"
+         :settings="settings"
+      />
+   </client-only>
 </template>
 
 <script>
@@ -92,17 +92,17 @@ import skills from '@/content/cv/skills.json'
 import information from '@/content/cv/information.json'
 import settings from '@/content/cv/settings.json'
 export default {
-  components: {
-    resume,
-  },
-  data() {
-    return {
-      segments,
-      skills,
-      information,
-      settings,
-    }
-  },
+   components: {
+      resume,
+   },
+   data() {
+      return {
+         segments,
+         skills,
+         information,
+         settings,
+      }
+   },
 }
 </script>
 ```
