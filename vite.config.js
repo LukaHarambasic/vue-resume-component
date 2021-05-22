@@ -14,7 +14,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/wrapper.js'),
       name: 'VueResume',
-      formats: ['es', 'cjs', 'umd', 'iife']
+      formats: ['es', 'cjs', 'umd']
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

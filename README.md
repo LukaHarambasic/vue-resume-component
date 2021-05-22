@@ -152,3 +152,5 @@ This component is using:
 4. After this you can hard reload your localhost to see the changes, hot reload isn't working every time.
 5. If you want to deploy your changes locally, start over at `3.`.
 
+## Helpful Links
+- https://risanb.com/code/bundling-your-javascript-library-with-rollup/#amd-output
