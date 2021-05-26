@@ -1,7 +1,7 @@
 > This package is WIP - it's functionally working, but customisations aren't implemented.
 
 
-<img src="docs/logo.svg" width="100" alt="Logo">
+<img src="public/logo.svg" width="100" alt="Logo">
 
 # vue-resume-component
 
